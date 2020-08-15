@@ -15,21 +15,16 @@ public class Largest_Smallest {
         scan.close();
        // System.out.print(Arrays.toString(arr));
         int large =0;//assuming largest value to 0
-        int small = 0;//assuming smallest value to 0
+        int small = arr[0];//assuming smallest value to 0
        for(int j=0;j<n;j++){
          //for largest
            if(large<arr[j]) {
             large = arr[j];
            }
-           else {
-             large = arr[0];
-           }
+           
            //for smallest
            if(small>arr[j]) {
             small = arr[j];
-           }
-           else {
-             small = arr[0];
            }
           
       }
